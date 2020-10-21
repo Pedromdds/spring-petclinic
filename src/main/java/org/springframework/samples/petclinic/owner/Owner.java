@@ -53,6 +53,9 @@ public class Owner extends Person {
 	@Column(name = "city")
 	@NotEmpty
 	private String city;
+	
+	@Column(name = "active")
+	private boolean active;
 
 	@Column(name = "telephone")
 	@NotEmpty
@@ -84,6 +87,14 @@ public class Owner extends Person {
 
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
+	}
+	
+	public String getActive() {
+		return this.active;
+	}
+
+	public void setActive(String active) {
+		this.active = active;
 	}
 
 	protected Set<Pet> getPetsInternal() {
