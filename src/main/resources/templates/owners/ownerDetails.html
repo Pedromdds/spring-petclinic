@@ -27,6 +27,11 @@
         <td th:text="*{telephone}"></td>
       </tr>
     </table>
+    
+     <tr>
+        <th>Situação</th>
+        <td th:text="*{active}"></td>
+      </tr>
   
     <a th:href="@{{id}/edit(id=${owner.id})}" class="btn btn-default">Edit
       Owner</a>
